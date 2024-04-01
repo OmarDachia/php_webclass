@@ -50,6 +50,9 @@
 
              echo "first number: ".$first_number."<br/>Second number: ". $second_number;
              echo "<br/>Addition: ". ($first_number + $second_number);
+             echo "<br/>Subtraction: ". ($first_number - $second_number);
+             echo "<br/>Multiplication: ". ($first_number * $second_number);
+             echo "<br/>Division: ". ($first_number / $second_number);
           ?>
         </div>
     </div>
