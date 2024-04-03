@@ -25,26 +25,15 @@
     <div id="main">
         <div id="header">
           <h1>Question</h1>
-          <p>7.	WAP to calculate 
-            <ol>
-                <li>(a+b)^2</li>
-                <li>(a+b)^3</li>
-                <li>(a^2-b^2)</li>
-            </ol>	
-            </p>
+          <p>8.	WAP to find circumference of a circle.C = 2*PI*r</p>
         </div>
         <div id="input">
         <form action="" method="POST">
            <p>
-               <label for="">a</label>
-               <input type="text" name="a" value="" >
+               <label for="">Radius</label>
+               <input type="number" name="radius" value="" >
             </p>
-           <p>
-                <label for="">b</label>
-                <input type="number" name="b">
-           </p>
-           
-
+                     
            <input type="submit" value="Compute" name="submit"/>
         </form>
         </div>
@@ -52,17 +41,11 @@
           <?php 
             //  print_r($_POST);
              
-             $a= $_POST['a'];
-             $b = $_POST['b'];
+             $radius= $_POST['radius'];
             
-             echo "a: ".$a."<br/>b: ".$b;
+            
+             echo "Radius : ".$radius."<br> Circircumference of is ". (2*(22/7)*$radius);
              ?>
-
-            <ol>
-                <li>(a+b)^2 is <?php  echo pow($a+$b,2);?></li>
-                <li>(a+b)^3 is <?php  echo pow($a+$b,3);?></li>
-                <li>(a^2-b^2) is <?php  echo pow($a,2)-pow($b,2);?></li>
-            </ol>
         </div>
     </div>
 
