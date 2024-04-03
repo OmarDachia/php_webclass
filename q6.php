@@ -71,13 +71,13 @@
              $num3 = $_POST['num3'];
              $num4= $_POST['num4'];
              $num5 = $_POST['num5'];
-             $num4= $_POST['num4'];
-             $num5 = $_POST['num5'];
+             $num4= $_POST['num6'];
+             $num5 = $_POST['num7'];
              
 
              echo "Number 1: ".$num1."<br/>Number 2: ".$num2."<br/>Number 3: ".$num3."<br/>Number 4: ".$num4."<br/>Number 5: ".$num5."<br/>Number 6: ".$num6."<br/>Number 7: ".$num7;
 
-             echo "<br/>Average is ((num1+num2+num3+num4+num1+$num4+num1)/7): ". (($num1+$num2+$num3+$num4+$num1+$num4+$num1)/7);
+             echo "<br/>Average is ((num1+num2+num3+num4+num1+num4+num1)/7): ". (($num1+$num2+$num3+$num4+$num1+$num4+$num1)/7);
              
           ?>
         </div>
