@@ -52,15 +52,18 @@
           <?php 
             //  print_r($_POST);
              
-             $num1= $_POST['a'];
-             $num2 = $_POST['b'];
+             $a= $_POST['a'];
+             $b = $_POST['b'];
                           
 
              echo "a: ".$a."<br/>b: ".$b;
+             ?>
 
-             echo "<br/>Average is ((num1+num2+num3+num4+num1+num4+num1)/7): ". (($num1+$num2+$num3+$num4+$num1+$num4+$num1)/7);
-             
-          ?>
+            <ol>
+                <li>(a+b)^2 is <?php  echo pow($a+$b,2);?></li>
+                <li>(a+b)^3 is <?php  echo pow($a+$b,3);?></li>
+                <li>(a^2-b^2) is <?php  echo pow($a,2)-pow($b,2);?></li>
+            </ol>
         </div>
     </div>
 
