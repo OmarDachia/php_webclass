@@ -57,7 +57,7 @@
             $first_number = $first_number + $second_number;
             $second_number = $first_number - $second_number;
             $first_number = $first_number - $second_number;
-
+            
             echo "AFTER SWAPPING";
             echo "===============";
             echo "first number: ".$first_number."<br/>Second number: ". $second_number;
