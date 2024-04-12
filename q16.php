@@ -26,7 +26,7 @@
         <div id="header">
           <h1>Question</h1>
           <p>
-          15.	WAP to accept the height of a person in centimeter and categorize the person according to taller between greater than 165.0 and less than 196.0, dwarf less than 150.0 & average between greater than 149.0 and less than 166.0.
+          16.	WAP to find whether a no. is even or odd.
             </p>
         </div>
         <div id="input">
