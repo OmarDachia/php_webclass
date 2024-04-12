@@ -32,8 +32,8 @@
         <div id="input">
         <form action="" method="POST">
            <p>
-                <label for="">Height:</label>
-                <input type="number" name="height" placeholder="height">
+                <label for="">Number:</label>
+                <input type="number" name="no" placeholder="Number">
            </p>
 
            <input type="submit" value="Compute" name="submit"/>
@@ -43,21 +43,17 @@
           <?php 
             //  print_r($_POST);
             // $temp= $_POST['temp'];
-            $height = $_POST['height'];
+            $no = $_POST['no'];
 
-            if($height<150.0)
+            if($no % 2 == 0)
             {
-                
-                echo "The person with height ".$height."cm is a Dwarf";
+                echo $no ." is an even number";
             }
-            else if(height>149.0 && height<166.0)
+            else
             {
-                echo "The person with height ".$height."cm is a average heighted";
+                echo $no ." is an odd number";
             }
-            else if(height>165.0 && height<196.0)
-            {
-                echo "The person with height ".$height."cm is a average heighted";
-            }
+           
           ?>
         </div>
     </div>
