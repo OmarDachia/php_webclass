@@ -26,7 +26,7 @@
         <div id="header">
           <h1>Question</h1>
           <p>
-          17.	WAP to find whether a no is positive or negative.
+          18.	
             </p>
         </div>
         <div id="input">
