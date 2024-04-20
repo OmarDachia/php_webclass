@@ -26,36 +26,31 @@
         <div id="header">
           <h1>Question</h1>
           <p>
-          18.	WAP to accept two integers and check whether they are equal or not.
+          19.	WAP to enter the %age of a student & print whether he is PASS or FAIL.
             </p>
         </div>
         <div id="input">
         <form action="" method="POST">
            <p>
-                <label for="">Number 1:</label>
-                <input type="number" name="no1" placeholder="Number">
+                <label for="">Score:</label>
+                <input type="number" name="score" placeholder="Number">
            </p>
-           <p>
-                <label for="">Number 2:</label>
-                <input type="number" name="no2" placeholder="Number">
-           </p>
-
+           
            <input type="submit" value="Compute" name="submit"/>
         </form>
         </div>
         <div id="result">
           <?php 
             //  print_r($_POST);
-            $no1= $_POST['no1'];
-            $no2 = $_POST['no2'];
-
-            if($no1 === $no1)
+            $score= $_POST['score'];
+            
+            if($score > 45)
             {
-                echo $no1." and ". $no2 ." are equal";
+                echo "Congratulation, you have Pass this subject with this ".$score." Score";
             }
             else
             {
-                echo $no1." and ". $no2 ." are not equal";
+                echo "Sorry, unffurtunately you failed this subject with this ".$score." Score";
             }
            
           ?>
