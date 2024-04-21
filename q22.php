@@ -57,7 +57,7 @@
             {
                 if($post_utme>=170)
                 {
-                    echo "Excellent";
+                    echo "Congratulation, You have made the cut of score";
                 }
                 else
                 {

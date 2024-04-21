@@ -26,11 +26,12 @@
         <div id="header">
           <h1>Question</h1>
           <p>
-          22.	Write a program to find the eligibility of admission for a professional course based on the following criteria:
-            <ol>
-                <li>Jamb score >=180</li>
-                <li>Post utme >=170</li>
-            </ol>
+          23.	WAP to calculate and print the Electricity bill of a given customer. The customer id., name and unit consumed by the user should be taken from the keyboard and display the total amount to pay by the customer. The charges are as follow:
+                Cost of Energy (Unit) in kw = N22.5.
+                *To be Entered from kyboard*
+                -Total Energy Consumed
+                -To amount To be paid
+                -Outstanding Balance.
           </p>
         </div>
         <div id="input">
