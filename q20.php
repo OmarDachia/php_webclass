@@ -32,8 +32,8 @@
         <div id="input">
         <form action="" method="POST">
            <p>
-                <label for="">Score:</label>
-                <input type="number" name="score" placeholder="Number">
+                <label for="">Year:</label>
+                <input type="number" name="year" placeholder="Number">
            </p>
            
            <input type="submit" value="Compute" name="submit"/>
@@ -42,15 +42,15 @@
         <div id="result">
           <?php 
             //  print_r($_POST);
-            $score= $_POST['score'];
+            $year= $_POST['year'];
             
-            if($score > 45)
+            if($year%2==0 && $year%100==0 && $year%400==0)
             {
-                echo "Congratulation, you have Pass this subject with this ".$score." Score";
+                echo "Congratulation, Year ".$year." is a leap year";
             }
             else
             {
-                echo "Sorry, unffurtunately you failed this subject with this ".$score." Score";
+                echo "Sorry, unffurtunately Year ".$year." is a leap year";
             }
            
           ?>
