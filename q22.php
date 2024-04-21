@@ -36,8 +36,12 @@
         <div id="input">
         <form action="" method="POST">
            <p>
-                <label for="">Grade:</label>
-                <input type="text" name="grade" placeholder="Enter a grade">
+                <label for="">Jamb Score:</label>
+                <input type="text" name="jamb_score" placeholder="Enter a Jamb Score">
+           </p>
+           <p>
+                <label for="">Post UTME:</label>
+                <input type="text" name="post_utme" placeholder="Enter a Post UTME">
            </p>
            
            <input type="submit" value="Compute" name="submit"/>
@@ -46,35 +50,23 @@
         <div id="result">
           <?php 
             //  print_r($_POST);
-            $grade= $_POST['grade'];
+            $jamb_score= $_POST['jamb_score'];
+            $post_utme= $_POST['post_utme'];
             
-            if($grade == 'A')
+            if($jamb_score>=180)
             {
-                echo "Excellent";
-            }
-            else if($grade == 'B')
-            {
-                echo "Very Good";
-            }
-            else if($grade == 'C')
-            {
-                echo "Good";
-            }
-            else if($grade == 'D')
-            {
-                echo "Poor";
-            }
-            else if($grade == 'E')
-            {
-                echo "Fair";
-            }
-            else  if($grade == 'F')
-            {
-                echo "Fail";
+                if($post_utme>=170)
+                {
+                    echo "Excellent";
+                }
+                else
+                {
+                    echo "Excellent";
+                }
             }
             else
             {
-                echo "Sorry, unfutunately you have invalid input";
+                echo "Sorry, unfutunately you did make the cut. Your Jamp Score ".$jamb_score." is below the marker";
             }
            
           ?>
