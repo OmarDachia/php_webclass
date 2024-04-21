@@ -26,14 +26,14 @@
         <div id="header">
           <h1>Question</h1>
           <p>
-          19.	WAP to enter the %age of a student & print whether he is PASS or FAIL.
+          21.	Write a program to accept a grade and declare the equivalent description
             </p>
         </div>
         <div id="input">
         <form action="" method="POST">
            <p>
-                <label for="">Score:</label>
-                <input type="number" name="score" placeholder="Number">
+                <label for="">Grade:</label>
+                <input type="text" name="grade" placeholder="Enter a grade">
            </p>
            
            <input type="submit" value="Compute" name="submit"/>
@@ -42,15 +42,35 @@
         <div id="result">
           <?php 
             //  print_r($_POST);
-            $score= $_POST['score'];
+            $grade= $_POST['grade'];
             
-            if($score > 45)
+            if($grade == 'A')
             {
-                echo "Congratulation, you have Pass this subject with this ".$score." Score";
+                echo "Excellent";
+            }
+            else if($grade == 'B')
+            {
+                echo "Very Good";
+            }
+            else if($grade == 'C')
+            {
+                echo "Good";
+            }
+            else if($grade == 'D')
+            {
+                echo "Poor";
+            }
+            else if($grade == 'E')
+            {
+                echo "Fair";
+            }
+            else  if($grade == 'F')
+            {
+                echo "Fail";
             }
             else
             {
-                echo "Sorry, unffurtunately you failed this subject with this ".$score." Score";
+                echo "Sorry, unfutunately you have invalid input";
             }
            
           ?>
