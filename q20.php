@@ -50,7 +50,7 @@
             }
             else
             {
-                echo "Sorry, unffurtunately Year ".$year." is a leap year";
+                echo "Sorry, unffurtunately Year ".$year." is not a leap year";
             }
            
           ?>
