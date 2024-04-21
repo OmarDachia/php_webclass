@@ -26,7 +26,7 @@
         <div id="header">
           <h1>Question</h1>
           <p>
-          19.	WAP to enter the %age of a student & print whether he is PASS or FAIL.
+          20.	WAP to check whether a given year is leap or not
             </p>
         </div>
         <div id="input">
