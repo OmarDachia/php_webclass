@@ -61,7 +61,7 @@
                 }
                 else
                 {
-                    echo "Excellent";
+                    echo "Sorry, unfutunately you did make the cut. Your Post UTME ".$post_utme." is below the marker";
                 }
             }
             else
