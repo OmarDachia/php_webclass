@@ -26,8 +26,12 @@
         <div id="header">
           <h1>Question</h1>
           <p>
-          21.	Write a program to accept a grade and declare the equivalent description
-            </p>
+          22.	Write a program to find the eligibility of admission for a professional course based on the following criteria:
+            <ol>
+                <li>Jamb score >=180</li>
+                <li>Post utme >=170</li>
+            </ol>
+          </p>
         </div>
         <div id="input">
         <form action="" method="POST">
