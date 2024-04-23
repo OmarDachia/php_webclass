@@ -54,6 +54,11 @@
                 <input type="number" name="unit" placeholder="Enter a Unit">
            </p>
 
+           <p>
+                <label for="">Amount paid:</label>
+                <input type="number" name="amount_paid" placeholder="Enter amount paid"/>
+           </p>
+
            <input type="submit" value="Compute" name="submit"/>
         </form>
         </div>
@@ -63,23 +68,18 @@
             $customer_id= $_POST['customer_id'];
             $customer_name= $_POST['customer_name'];
             $unit=$_POST['unit'];
+            $amount_paid = $_POST['amount_paid'];
             
-            if($jamb_score>=180)
-            {
-                if($post_utme>=170)
-                {
-                    echo "Excellent";
-                }
-                else
-                {
-                    echo "Sorry, unfutunately you did make the cut. Your Post UTME ".$post_utme." is below the marker";
-                }
-            }
-            else
-            {
-                echo "Sorry, unfutunately you did make the cut. Your Jamp Score ".$jamb_score." is below the marker";
-            }
-           
+            $total_energy_consumed = $unit;
+            $amount_to_be_paid = 22.5 * $unit;
+            $outstanding_balance = $amount_to_be_paid - $amount_paid;
+
+           echo "Customer ID = ".$customer_id."<br>
+           Customer Name = ".$customer_name."<br>
+           Energy Consumed = ".$unit."<br>
+           Amount to be paid =".$amount_to_be_paid."<br>
+           Amount Paid = ".$amount_paid"<br>
+           Outstanding Balance= ".$outstanding_balance;
           ?>
         </div>
     </div>
