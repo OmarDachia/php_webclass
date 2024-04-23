@@ -46,7 +46,7 @@
            </p>
            <p>
                 <label for="">Customer Name:</label>
-                <input type="text" name="customer_id" placeholder="Enter a Customer Name">
+                <input type="text" name="customer_name" placeholder="Enter a Customer Name">
            </p>
            
            <p>
@@ -60,8 +60,9 @@
         <div id="result">
           <?php 
             //  print_r($_POST);
-            $jamb_score= $_POST['jamb_score'];
-            $post_utme= $_POST['post_utme'];
+            $customer_id= $_POST['customer_id'];
+            $customer_name= $_POST['customer_name'];
+            $unit=$_POST['unit'];
             
             if($jamb_score>=180)
             {
