@@ -88,7 +88,7 @@
                 $grade = "F";
             }
 
-             echo "<br/>grade is ". $grade ;
+             echo "Grade is ". $grade ;
              
           ?>
         </div>
