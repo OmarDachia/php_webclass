@@ -26,23 +26,14 @@
         <div id="header">
           <h1>Question</h1>
           <p>
-          23.	WAP to calculate and print the Electricity bill of a given customer. The customer id., name and unit consumed by the user should be taken from the keyboard and display the total amount to pay by the customer. The charges are as follow:
-                Cost of Energy (Unit) in kw = N22.5.
-                *To be Entered from kyboard*
-                -Total Energy Consumed
-                -To amount To be paid
-                -Outstanding Balance.
+          30.	WAP to display arithmetic operations using switch-case statement.
           </p>
         </div>
         <div id="input">
         <form action="" method="POST">
            <p>
-                <label for="">Jamb Score:</label>
-                <input type="text" name="jamb_score" placeholder="Enter a Jamb Score">
-           </p>
-           <p>
-                <label for="">Post UTME:</label>
-                <input type="text" name="post_utme" placeholder="Enter a Post UTME">
+                <label for="">operations:</label>
+                <input type="text" name="operator" placeholder="Enter a operator">
            </p>
            
            <input type="submit" value="Compute" name="submit"/>
