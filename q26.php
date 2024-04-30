@@ -51,23 +51,32 @@
         <div id="result">
           <?php 
             //  print_r($_POST);
-            $jamb_score= $_POST['jamb_score'];
-            $post_utme= $_POST['post_utme'];
+            $first_number= $_POST['first_number'];
+            $second_number= $_POST['second_number'];
+            $third_number= $_POST['third_number'];
+           
             
-            if($jamb_score>=180)
+            if($first_number>$second_number)
             {
-                if($post_utme>=170)
+                if($first_number>$third_number)
                 {
-                    echo "Excellent";
+                    echo $first_number." is the largest among ".$first_number.",". $second_number." and ".$third_number;
                 }
                 else
                 {
-                    echo "Sorry, unfutunately you did make the cut. Your Post UTME ".$post_utme." is below the marker";
+                    echo $third_number." is the largest among ".$first_number.",". $second_number." and ".$third_number;
                 }
             }
             else
             {
-                echo "Sorry, unfutunately you did make the cut. Your Jamp Score ".$jamb_score." is below the marker";
+                if($second_number>$third_number)
+                {
+                    echo $second_number." is the largest among ".$first_number.",". $second_number." and ".$third_number;
+                }
+                else
+                {
+                    echo $third_number." is the largest among ".$first_number.",". $second_number." and ".$third_number;
+                }
             }
            
           ?>
