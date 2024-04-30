@@ -42,23 +42,30 @@
         <div id="result">
           <?php 
             //  print_r($_POST);
-            $jamb_score= $_POST['jamb_score'];
-            $post_utme= $_POST['post_utme'];
-            
-            if($jamb_score>=180)
-            {
-                if($post_utme>=170)
-                {
-                    echo "Excellent";
-                }
-                else
-                {
-                    echo "Sorry, unfutunately you did make the cut. Your Post UTME ".$post_utme." is below the marker";
-                }
-            }
-            else
-            {
-                echo "Sorry, unfutunately you did make the cut. Your Jamp Score ".$jamb_score." is below the marker";
+            $operator= $_POST['operator'];
+            switch($operator){
+                case 1:
+                    echo "Sunday";
+                    break;
+                case 2:
+                    echo "Monday";
+                    break;
+                case 3:
+                    echo "Tuesday";
+                    break;
+                case 4:
+                    echo "Wednesday";
+                    break;
+                case 5:
+                    echo "Thursday";
+                    break;
+                case 6:
+                    echo "Firday";
+                    break;
+                case 7:
+                    echo "Saturday";
+                    break;
+
             }
            
           ?>
