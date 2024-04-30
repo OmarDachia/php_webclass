@@ -26,48 +26,47 @@
         <div id="header">
           <h1>Question</h1>
           <p>
-          23.	WAP to calculate and print the Electricity bill of a given customer. The customer id., name and unit consumed by the user should be taken from the keyboard and display the total amount to pay by the customer. The charges are as follow:
-                Cost of Energy (Unit) in kw = N22.5.
-                *To be Entered from kyboard*
-                -Total Energy Consumed
-                -To amount To be paid
-                -Outstanding Balance.
+          29.	WAP to display days of week i.e. Monday to Sunday using switch-case statement.
           </p>
         </div>
         <div id="input">
         <form action="" method="POST">
            <p>
-                <label for="">Jamb Score:</label>
-                <input type="text" name="jamb_score" placeholder="Enter a Jamb Score">
+                <label for="">Week:</label>
+                <input type="text" name="week" placeholder="Enter a week">
            </p>
-           <p>
-                <label for="">Post UTME:</label>
-                <input type="text" name="post_utme" placeholder="Enter a Post UTME">
-           </p>
-           
+
            <input type="submit" value="Compute" name="submit"/>
         </form>
         </div>
         <div id="result">
           <?php 
             //  print_r($_POST);
-            $jamb_score= $_POST['jamb_score'];
-            $post_utme= $_POST['post_utme'];
+            $week= $_POST['week'];
             
-            if($jamb_score>=180)
-            {
-                if($post_utme>=170)
-                {
-                    echo "Excellent";
-                }
-                else
-                {
-                    echo "Sorry, unfutunately you did make the cut. Your Post UTME ".$post_utme." is below the marker";
-                }
-            }
-            else
-            {
-                echo "Sorry, unfutunately you did make the cut. Your Jamp Score ".$jamb_score." is below the marker";
+            switch($week){
+                case 1:
+                    echo "Sunday";
+                    break;
+                case 2:
+                    echo "Monday";
+                    break;
+                case 3:
+                    echo "Tuesday";
+                    break;
+                case 4:
+                    echo "Wednesday";
+                    break;
+                case 5:
+                    echo "Thursday";
+                    break;
+                case 6:
+                    echo "Firday";
+                    break;
+                case 7:
+                    echo "Saturday";
+                    break;
+
             }
            
           ?>
