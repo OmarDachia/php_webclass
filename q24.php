@@ -26,44 +26,31 @@
         <div id="header">
           <h1>Question</h1>
           <p>
-         
+          24.	WAP to show the use of conditional operator (Greater among two numbers)
           </p>
         </div>
         <div id="input">
         <form action="" method="POST">
            <p>
-                <label for="">Jamb Score:</label>
-                <input type="text" name="jamb_score" placeholder="Enter a Jamb Score">
+                <label for="">First Number:</label>
+                <input type="text" name="first_number" placeholder="Enter a First number">
            </p>
+
            <p>
-                <label for="">Post UTME:</label>
-                <input type="text" name="post_utme" placeholder="Enter a Post UTME">
+                <label for="">Second Number:</label>
+                <input type="text" name="second_number" placeholder="Enter a Second number">
            </p>
-           
+                     
            <input type="submit" value="Compute" name="submit"/>
         </form>
         </div>
         <div id="result">
           <?php 
             //  print_r($_POST);
-            $jamb_score= $_POST['jamb_score'];
-            $post_utme= $_POST['post_utme'];
+            $first_number= $_POST['first_number'];
+            $second_number= $_POST['second_number'];
             
-            if($jamb_score>=180)
-            {
-                if($post_utme>=170)
-                {
-                    echo "Excellent";
-                }
-                else
-                {
-                    echo "Sorry, unfutunately you did make the cut. Your Post UTME ".$post_utme." is below the marker";
-                }
-            }
-            else
-            {
-                echo "Sorry, unfutunately you did make the cut. Your Jamp Score ".$jamb_score." is below the marker";
-            }
+            echo $first_number == $second_number? $first_number." is the largest": $second_number." is the largest";
            
           ?>
         </div>
