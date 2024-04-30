@@ -26,23 +26,34 @@
         <div id="header">
           <h1>Question</h1>
           <p>
-          23.	WAP to calculate and print the Electricity bill of a given customer. The customer id., name and unit consumed by the user should be taken from the keyboard and display the total amount to pay by the customer. The charges are as follow:
-                Cost of Energy (Unit) in kw = N22.5.
-                *To be Entered from kyboard*
-                -Total Energy Consumed
-                -To amount To be paid
-                -Outstanding Balance.
+          28.	WAP to calculate the Gross Salary of an employee.
+                Assume:
+            <hr>
+            <table>
+                <tr>
+                    <th>BASIC SALARY</th>
+                    <th>DA</th>
+                    <th>HRA</th>
+                </tr>
+                <tr>
+                    <th><1500</th>
+                    <th>90% of Basic Salary</th>
+                    <th>10% of Basic Salary</th>
+                </tr>
+                <tr>
+                    <th>>=1500</th>
+                    <th>98% of Basic Salary</th>
+                    <th>500</th>
+                </tr>
+
+            </table>
           </p>
         </div>
         <div id="input">
         <form action="" method="POST">
            <p>
-                <label for="">Jamb Score:</label>
-                <input type="text" name="jamb_score" placeholder="Enter a Jamb Score">
-           </p>
-           <p>
-                <label for="">Post UTME:</label>
-                <input type="text" name="post_utme" placeholder="Enter a Post UTME">
+                <label for="">Basic Salary:</label>
+                <input type="text" name="basic_salary" placeholder="Enter a Basic Salary">
            </p>
            
            <input type="submit" value="Compute" name="submit"/>
@@ -51,24 +62,21 @@
         <div id="result">
           <?php 
             //  print_r($_POST);
-            $jamb_score= $_POST['jamb_score'];
-            $post_utme= $_POST['post_utme'];
+            $basic_salary= $_POST['basic_salary'];
+            // $post_utme= $_POST['post_utme'];
             
-            if($jamb_score>=180)
+            if($basic_salary<1500)
             {
-                if($post_utme>=170)
-                {
-                    echo "Excellent";
-                }
-                else
-                {
-                    echo "Sorry, unfutunately you did make the cut. Your Post UTME ".$post_utme." is below the marker";
-                }
+                $DA = (90/100)*$basic_salary;
+                $HRA = (10/100)*$basic_salary;
             }
-            else
+            else if($basic_salary>=1500)
             {
-                echo "Sorry, unfutunately you did make the cut. Your Jamp Score ".$jamb_score." is below the marker";
+                $DA = (98/100)*$basic_salary;
+                $HRA = 500;
             }
+
+            echo "Gross Salary of an employee : ". ($DA + $HRA + $basic_salary); 
            
           ?>
         </div>
