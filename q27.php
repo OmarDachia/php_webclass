@@ -25,7 +25,7 @@
     <div id="main">
         <div id="header">
           <h1>Question</h1>
-          <p>5.	WAP to enter marks of a student in 5 subjects & calculate the percentage. </p>
+          <p>27.	WAP to calculate the percentage of a student in 5 subjects and then find his grade accordingly. </p>
         </div>
         <div id="input">
         <form action="" method="POST">
@@ -65,8 +65,30 @@
              
 
              echo "Subject 1: ".$sub1."<br/>Subject 2: ".$sub2."<br/>Subject 3: ".$sub3."<br/>Subject 4: ".$sub4."<br/>Subject 5: ".$sub5;
+            $percentage = (($sub1+$sub2+$sub3+$sub4+$sub1)/500)*100;
+            $grade="";
 
-             echo "<br/>Percentage is ((sub1+sub2+sub3+sub4+sub5)/500)*100: ". (($sub1+$sub2+$sub3+$sub4+$sub1)/500)*100;
+            if($percentage>69)
+            {
+                $grade = "A";
+            }
+            else if ($percentage>59){
+                $grade = "B";
+            }
+            else if ($percentage>49){
+                $grade = "C";
+            }
+            else if ($percentage>44){
+                $grade = "D";
+            }
+            else if ($percentage>39){
+                $grade = "E";
+            }
+            else {
+                $grade = "F";
+            }
+
+             echo "<br/>grade is ". $grade ;
              
           ?>
         </div>
