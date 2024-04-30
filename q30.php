@@ -44,28 +44,21 @@
             //  print_r($_POST);
             $operator= $_POST['operator'];
             switch($operator){
-                case 1:
-                    echo "Sunday";
+                case "+":
+                    echo "Addition";
                     break;
-                case 2:
-                    echo "Monday";
+                case "-":
+                    echo "Subtraction";
                     break;
-                case 3:
-                    echo "Tuesday";
+                case "*":
+                    echo "Multipication";
                     break;
-                case 4:
-                    echo "Wednesday";
+                case "/":
+                    echo "Division";
                     break;
-                case 5:
-                    echo "Thursday";
+                case "%":
+                    echo "Modulo";
                     break;
-                case 6:
-                    echo "Firday";
-                    break;
-                case 7:
-                    echo "Saturday";
-                    break;
-
             }
            
           ?>
