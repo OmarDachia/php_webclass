@@ -26,14 +26,17 @@
         <div id="header">
           <h1>Question</h1>
           <p>
-          30.	WAP to display arithmetic operations using switch-case statement.
+          36.	WAP to factorial of a no
+                i.	Using for loop<br/>
+                ii.	Using while loop<br/>
+
           </p>
         </div>
         <div id="input">
         <form action="" method="POST">
            <p>
-                <label for="">operations:</label>
-                <input type="text" name="operator" placeholder="Enter a operator">
+                <label for="">number:</label>
+                <input type="text" name="number" placeholder="Enter a number">
            </p>
            
            <input type="submit" value="Compute" name="submit"/>
@@ -42,24 +45,27 @@
         <div id="result">
           <?php 
             //  print_r($_POST);
-            $operator= $_POST['operator'];
-            switch($operator){
-                case "+":
-                    echo "Addition";
-                    break;
-                case "-":
-                    echo "Subtraction";
-                    break;
-                case "*":
-                    echo "Multipication";
-                    break;
-                case "/":
-                    echo "Division";
-                    break;
-                case "%":
-                    echo "Modulo";
-                    break;
-            }
+            $number= $_POST['number'];
+            echo "using for loop";
+            
+            $factorial = 1;  
+            for ($x=$number; $x>=1; $x--)   
+            {  
+                $factorial = $factorial * $x;  
+            }  
+
+            echo "Factorial of $number is $factorial";
+
+            echo "using while";
+
+            $fact=1; $i=1; 
+            while($i<=$number)
+            { 
+                $fact=$fact*$i;
+                $i++; 
+            } 
+            
+            echo "factorial of $number is: $fact";
            
           ?>
         </div>
