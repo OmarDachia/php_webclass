@@ -26,10 +26,13 @@
         <div id="header">
           <h1>Question</h1>
           <p>
-          30.	WAP to display arithmetic operations using switch-case statement.
+          35.	WAP to print the following series:
+                i.	10,9,8,…..1<br/>
+                ii.	2,4,6,8,…..20<br/>
+                iii.	10,13.5,17,20.5<br/>
           </p>
         </div>
-        <div id="input">
+        <!-- <div id="input">
         <form action="" method="POST">
            <p>
                 <label for="">operations:</label>
@@ -38,29 +41,24 @@
            
            <input type="submit" value="Compute" name="submit"/>
         </form>
-        </div>
+        </div> -->
         <div id="result">
           <?php 
             //  print_r($_POST);
-            $operator= $_POST['operator'];
-            switch($operator){
-                case "+":
-                    echo "Addition";
-                    break;
-                case "-":
-                    echo "Subtraction";
-                    break;
-                case "*":
-                    echo "Multipication";
-                    break;
-                case "/":
-                    echo "Division";
-                    break;
-                case "%":
-                    echo "Modulo";
-                    break;
+            for($i=10;$i>0;$i--)
+            {
+                echo $i.", ";
             }
            
+            for($i=2;$i<=20;$i++)
+            {
+                echo $i.", ";
+            }
+
+            for($i=10;$i<=20.5;$i+=1.5)
+            {
+                echo $i.", ";
+            }
           ?>
         </div>
     </div>
