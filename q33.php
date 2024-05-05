@@ -26,14 +26,14 @@
         <div id="header">
           <h1>Question</h1>
           <p>
-          30.	WAP to display arithmetic operations using switch-case statement.
+          33.	WAP to print first N natural numbers and their sum.
           </p>
         </div>
         <div id="input">
         <form action="" method="POST">
            <p>
-                <label for="">operations:</label>
-                <input type="text" name="operator" placeholder="Enter a operator">
+                <label for="">number:</label>
+                <input type="text" name="number" placeholder="Enter a number">
            </p>
            
            <input type="submit" value="Compute" name="submit"/>
@@ -42,23 +42,18 @@
         <div id="result">
           <?php 
             //  print_r($_POST);
-            $operator= $_POST['operator'];
-            switch($operator){
-                case "+":
-                    echo "Addition";
-                    break;
-                case "-":
-                    echo "Subtraction";
-                    break;
-                case "*":
-                    echo "Multipication";
-                    break;
-                case "/":
-                    echo "Division";
-                    break;
-                case "%":
-                    echo "Modulo";
-                    break;
+            $number= $_POST['number'];
+            echo "using for loop";
+            for($i=1;$i<=$number;$i++)
+            {
+                echo $i;
+            }
+
+            echo "using while";
+
+            $j=1;
+            while($j<=$number){
+                echo $j;
             }
            
           ?>
