@@ -26,39 +26,58 @@
         <div id="header">
           <h1>Question</h1>
           <p>
-          30.	WAP to display arithmetic operations using switch-case statement.
+          34.	WAP to calculate SI for 3 sets of p, n & r.
           </p>
         </div>
         <div id="input">
         <form action="" method="POST">
            <p>
-                <label for="">operations:</label>
-                <input type="text" name="operator" placeholder="Enter a operator">
+                <label for="">P 1:</label>
+                <input type="text" name="p1" placeholder="Enter a Principal 1">
            </p>
-           
+           <p>
+                <label for="">P 2:</label>
+                <input type="text" name="p2" placeholder="Enter a Principal 2">
+           </p>
+           <p>
+                <label for="">P 3:</label>
+                <input type="text" name="p3" placeholder="Enter a Principal 3">
+           </p>
+
+           <p>
+                <label for="">N 1:</label>
+                <input type="text" name="n1" placeholder="Enter a N 1">
+           </p>
+           <p>
+                <label for="">N 2:</label>
+                <input type="text" name="n2" placeholder="Enter a N 2">
+           </p>
+           <p>
+                <label for="">N 3:</label>
+                <input type="text" name="n3" placeholder="Enter a N 3">
+           </p>
+
+           <p>
+                <label for="">T 1:</label>
+                <input type="text" name="t1" placeholder="Enter a T 1">
+           </p>
+           <p>
+                <label for="">T 2:</label>
+                <input type="text" name="t2" placeholder="Enter a T 2">
+           </p>
+           <p>
+                <label for="">T 3:</label>
+                <input type="text" name="t3" placeholder="Enter a T 3">
+           </p>
            <input type="submit" value="Compute" name="submit"/>
         </form>
         </div>
         <div id="result">
           <?php 
             //  print_r($_POST);
-            $operator= $_POST['operator'];
-            switch($operator){
-                case "+":
-                    echo "Addition";
-                    break;
-                case "-":
-                    echo "Subtraction";
-                    break;
-                case "*":
-                    echo "Multipication";
-                    break;
-                case "/":
-                    echo "Division";
-                    break;
-                case "%":
-                    echo "Modulo";
-                    break;
+            for($i=1;$i<=3;$i++)
+            {
+                echo "P".$i = $_POST['p'.$i]*$_POST['n'.$i]*$_POST['t'.$i];
             }
            
           ?>
