@@ -26,10 +26,10 @@
         <div id="header">
           <h1>Question</h1>
           <p>
-          30.	WAP to display arithmetic operations using switch-case statement.
+          32.	WAP to print first 10 natural nos.
           </p>
         </div>
-        <div id="input">
+        <!-- <div id="input">
         <form action="" method="POST">
            <p>
                 <label for="">operations:</label>
@@ -38,29 +38,22 @@
            
            <input type="submit" value="Compute" name="submit"/>
         </form>
-        </div>
+        </div> -->
         <div id="result">
           <?php 
             //  print_r($_POST);
-            $operator= $_POST['operator'];
-            switch($operator){
-                case "+":
-                    echo "Addition";
-                    break;
-                case "-":
-                    echo "Subtraction";
-                    break;
-                case "*":
-                    echo "Multipication";
-                    break;
-                case "/":
-                    echo "Division";
-                    break;
-                case "%":
-                    echo "Modulo";
-                    break;
+            echo "using for loop";
+            for($i=1;$i<=10;$i++)
+            {
+                echo $i;
             }
-           
+
+            echo "using while";
+
+            $j=1;
+            while($j<=10){
+                echo $j;
+            }
           ?>
         </div>
     </div>
