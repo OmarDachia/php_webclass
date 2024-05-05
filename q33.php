@@ -54,6 +54,7 @@
             $j=1;
             while($j<=$number){
                 echo $j;
+                $j++;
             }
            
           ?>
